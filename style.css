@@ -77,3 +77,7 @@ textarea {
 .col, .col-8 {
   color: white;
 }
+
+#myText {
+  color: black;
+}

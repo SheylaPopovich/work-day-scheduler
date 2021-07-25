@@ -52,3 +52,23 @@ var todaysDate = $("#currentDay");
 
 // WHEN I click into a timeblock
 // THEN I can enter an event
+ 
+// var col = document.querySelector("#col");
+// var container = document.querySelector(".container");
+
+
+// container.addEventListener("click", function(){
+//     document.getElementById('col').innerHTML
+//  console.log(col)
+
+    
+// })
+
+
+const userTextInput = localStorage.getItem("text")
+console.log(userTextInput);
+
+function opentextarea() {
+    var input = document.createElement("TEXTAREA");
+
+}
