@@ -78,6 +78,6 @@ textarea {
   color: white;
 }
 
-#myText {
+#userText, p {
   color: black;
 }

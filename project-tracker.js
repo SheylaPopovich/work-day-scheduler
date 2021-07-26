@@ -37,6 +37,28 @@ var todaysDate = $("#currentDay");
     }
 
 
+//Save event to time block create save button with addEventListener 
+var saveBtn = document.querySelector(".saveBtn");
+var textArea = document.querySelector("#userText");
+
+
+function saveResponses(){
+  localStorage.setItem("userText", textArea.value);
+}
+
+saveBtn.addEventListener("click", saveResponses)
+
+
+function retrieveResponses(){
+  textArea.value = localStorage.getItem("userText")
+}
+
+
+
+
+
+
+
   //THEN each timeblock is color coded to indicate whether it is in the past, present, or future
 //   let currentTime = {}
 //   const selectedTime = e.target;
