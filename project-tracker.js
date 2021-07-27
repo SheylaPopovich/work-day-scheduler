@@ -1,3 +1,6 @@
+ var timeSlots = [$("#8"), $("#9"), $("#10"), $("#11"), $("#12"), $("#13"), $("#14"), $("#15"), $("#16"), $("#17"), $("#18"), $("#19"), $("#20"), $("#21")]
+
+
 var todaysDate = $("#currentDay");
     date = null;
 
@@ -38,59 +41,59 @@ var todaysDate = $("#currentDay");
 
 
 //Save event to time block create save button with addEventListener 
-var saveBtn = document.querySelector(".saveBtn");
-var textArea = document.querySelector("#userText");
+var saveBtn = $(".saveBtn");
+var textArea = $(".text");
 
 
-function saveResponses(){
-  localStorage.setItem("userText", textArea.value);
-}
 
-saveBtn.addEventListener("click", saveResponses)
+saveBtn.click( function (){
+  const userInput =  $(this).siblings(".text").val();
+  const time = $(this).siblings(".hour").attr("id");
+   console.log(time)
+  localStorage.setItem(time, userInput);
 
+})
 
+//get with tutor to have local storage output/save  values to text areas
 function retrieveResponses(){
   textArea.value = localStorage.getItem("userText")
+  
+}
+retrieveResponses()
+
+
+for (let index = 0; index < timeSlots.length; index++) {
+  const selectedSlot = timeSlots[index].attr("id");
+  const previousText = localStorage.getItem(selectedSlot);
+  // timeSlots[index].siblings(".text").value = selectedSlot
+  
+
+
+  console.log(previousText) 
+  
 }
 
 
 
 
 
+var currentTime = moment().hours()
+// console.log(currentTime)
 
-
-  //THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-//   let currentTime = {}
-//   const selectedTime = e.target;
+for (let i = 0; i < timeSlots.length; i++) {
+  const element = timeSlots[i].attr("id");
   
-  
 
-//   const classToApply = 
-//         selectedTime == currentTime
-
-//    == currentQuestion.answer ? "correct" : "incorrect";
-
-
-
-// WHEN I click into a timeblock
-// THEN I can enter an event
- 
-// var col = document.querySelector("#col");
-// var container = document.querySelector(".container");
-
-
-// container.addEventListener("click", function(){
-//     document.getElementById('col').innerHTML
-//  console.log(col)
-
-    
-// })
-
-
-const userTextInput = localStorage.getItem("text")
-console.log(userTextInput);
-
-function opentextarea() {
-    var input = document.createElement("TEXTAREA");
-
+  if (element == currentTime){
+    timeSlots[i].siblings().addClass("present")
+  } 
+   else if (element < currentTime) {
+     timeSlots[i].siblings().addClass("past")
+   } 
+   else {
+    timeSlots[i].siblings().addClass("future")
+  } 
 }
+
+
+
