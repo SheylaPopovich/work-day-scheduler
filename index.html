@@ -1,114 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <!-- THEN the current day is displayed at the top of the calendar -->
-      <p id="currentDay" class="lead"></p>
-      <div id="weather">
-        <div id="location"></div>
-         <h1 id="temp"></h1>
-        <div id="description"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A goal without a plan is just a wish...</p>
+    <!-- THEN the current day is displayed at the top of the calendar -->
+    <p id="currentDay" class="lead"></p>
+    <div id="weather">
+      <div id="location"></div>
+      <h1 id="temp"></h1>
+      <div id="description"></div>
     </div>
-    </header>
-
-      <!-- Timeblocks go here -->
-      <!-- THEN I am presented with timeblocks for standard business hours -->
-    <div class="container">
-      <div class="row">
-        <div id="8" class="col-2 hour">8:00AM</div>
-        <input type="text" class="text col-8" >
-        <button class="saveBtn col-2" type="button">Save Date</button>
-      </div>
+  </header>
 
 
 
-
-      <div class="row ">
-        <div id="9" class="col-2 hour">9:00AM</div>
-        <input type="text" class="text col-8 " >
-        <button class="saveBtn col-2" type="button">Save Date</button>
-      </div>
-
-      <div class="row ">
-        <div id="10"  class="col-2 hour">10:00AM</div>
-        <input type="text" class="text col-8" >
-         <button class="saveBtn col-2" type="button">Save Date</button>
-      </div>
-
-
-      <div class="row ">
-        <div id="11"  class="col-2 hour">11:00AM</div>
-        <input type="text" class="text col-8" >
-        <button class="saveBtn col-2" type="button">Save Date</button>
-      </div>
-
-      <div class="row ">
-        <div id="12" class="col-2 hour">12:00PM</div>
-        <input type="text" class="text col-8" >
-         <button class="saveBtn col-2" type="button">Save Date</button>
-      </div>
-
-      <div class="row ">
-        <div id="13"  class="col-2 hour">1:00PM</div>
-        <input type="text" class="text col-8" >
-        <button class="saveBtn col-2" type="button">Save Date</button>
-      </div>
-
-
-      <div class="row ">
-        <div id="14"  class="col-2 hour">2:00PM</div>
-        <input type="text" class="text col-8" >
-        <button class="saveBtn col-2" type="button">Save Date</button>
-      </div>
-
-
-      <div class="row ">
-        <div id="15" class="col-2 hour">3:00PM</div>
-        <input type="text" class="text col-8" >
-        <button class="saveBtn col-2" type="button">Save Date</button>
-      </div>
-
-
-      <div class="row ">
-        <div id="16"  class="col-2 hour">4:00PM</div>
-        <input type="text" class="text col-8" >
-        <button class="saveBtn col-2" type="button">Save Date</button>
-      </div>
-
-
-      <div class="row ">
-        <div id="17"  class="col-2 hour">5:00PM</div>
-        <input type="text" class="text col-8" 
-        <button class="saveBtn col-2" type="button">Save Date</button>
-      </div>
-
+  <!-- Timeblocks go here -->
+  <!-- THEN I am presented with timeblocks for standard business hours -->
+  <div class="container">
+    <div class="row">
+      <div id="8" class="col-2 hour">8:00AM</div>
+      <input type="text" class="text col-8">
+      <button class="saveBtn col-2" type="button">Save Date</button>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="./project-tracker.js"></script>
-  </body>
+
+
+
+
+    <div class="row ">
+      <div id="9" class="col-2 hour">9:00AM</div>
+      <input type="text" class="text col-8 ">
+      <button class="saveBtn col-2" type="button">Save Date</button>
+    </div>
+
+    <div class="row ">
+      <div id="10" class="col-2 hour">10:00AM</div>
+      <input type="text" class="text col-8">
+      <button class="saveBtn col-2" type="button">Save Date</button>
+    </div>
+
+
+    <div class="row ">
+      <div id="11" class="col-2 hour">11:00AM</div>
+      <input type="text" class="text col-8">
+      <button class="saveBtn col-2" type="button">Save Date</button>
+    </div>
+
+    <div class="row ">
+      <div id="12" class="col-2 hour">12:00PM</div>
+      <input type="text" class="text col-8">
+      <button class="saveBtn col-2" type="button">Save Date</button>
+    </div>
+
+    <div class="row ">
+      <div id="13" class="col-2 hour">1:00PM</div>
+      <input type="text" class="text col-8">
+      <button class="saveBtn col-2" type="button">Save Date</button>
+    </div>
+
+
+    <div class="row ">
+      <div id="14" class="col-2 hour">2:00PM</div>
+      <input type="text" class="text col-8">
+      <button class="saveBtn col-2" type="button">Save Date</button>
+    </div>
+
+
+    <div class="row ">
+      <div id="15" class="col-2 hour">3:00PM</div>
+      <input type="text" class="text col-8">
+      <button class="saveBtn col-2" type="button">Save Date</button>
+    </div>
+
+
+    <div class="row ">
+      <div id="16" class="col-2 hour">4:00PM</div>
+      <input type="text" class="text col-8">
+      <button class="saveBtn col-2" type="button">Save Date</button>
+    </div>
+
+
+    <div class="row ">
+      <div id="17" class="col-2 hour">5:00PM</div>
+      <input type="text" class="text col-8">
+      <button class="saveBtn col-2" type="button">Save Date</button>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="./project-tracker.js"></script>
+</body>
+
 </html>

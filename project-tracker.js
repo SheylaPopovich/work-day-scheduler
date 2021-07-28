@@ -51,14 +51,18 @@ saveBtn.click( function (){
   const time = $(this).siblings(".hour").attr("id");
    console.log(time)
   localStorage.setItem(time, userInput);
-
+  
 })
+
+
 
 //get with tutor to have local storage output/save  values to text areas
 function retrieveResponses(){
-  textArea.value = localStorage.getItem("userText")
+  textArea.value = localStorage.getItem("time");
+  
   
 }
+
 retrieveResponses()
 
 
