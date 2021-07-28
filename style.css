@@ -3,6 +3,9 @@ body {
   font-size: 16px;
   line-height: 1;
   margin-bottom: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+ 
 }
 
 textarea {
@@ -16,23 +19,24 @@ textarea {
 
 .jumbotron {
   background-image: url(./coverphoto.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   text-align: right;
-  padding-top: 5%;
-  padding-right: 5%;
   margin-bottom: 0%;
- 
+  background-color: white;
+  
 }
 
 
 .description {
   white-space: pre-wrap;
+  
 }
 
 .time-block {
   text-align: center;
   border-radius: 15px;
+  
 }
 
 .row {
@@ -49,17 +53,17 @@ textarea {
 }
 
 .past {
-  background-color:#f3ffdd;
+  background-color:#c7c7c7;
   color: white;
 }
 
 .present {
-  background-color: #ffe3c0;
+  background-color: #491795;
   color: white;
 }
 
 .future {
-  background-color: #0F802C;
+  background-color: #b89a66;
   color: white;
 }
 
@@ -70,7 +74,7 @@ textarea {
   border-bottom-right-radius: 15px;
   background-image: url(./il_794xN.1773758727_emya.jpg);
   background-position: 70%;
-  color: #075514;
+  color: black;
   font-size: 22px;
   font-weight: bolder;
 }
@@ -86,6 +90,17 @@ h1 {
   font-family: 'Dancing Script', cursive;
 }
 
-#location {
-    font-size: 30px;
+#location  {
+    font-size: 20px;
+}
+
+
+.jumbotron, #weather {
+  padding-top: 1%;
+ 
+}
+
+#temp {
+  font-size: 35px;
+  
 }
