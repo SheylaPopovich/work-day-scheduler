@@ -57,13 +57,16 @@ saveBtn.click( function (){
 
 
 //get with tutor to have local storage output/save  values to text areas
-function retrieveResponses(){
-  textArea.value = localStorage.getItem("time");
-  
-  
-}
 
-retrieveResponses()
+
+  $(".row").each(function(){
+   const time = $(this).children(".hour").attr("id");
+   const task = localStorage.getItem(time);
+   $(this).children(".text").val(task);
+  })
+  
+
+
 
 
 for (let index = 0; index < timeSlots.length; index++) {

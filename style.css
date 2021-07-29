@@ -5,6 +5,8 @@ body {
   margin-bottom: 5%;
   margin-left: 15%;
   margin-right: 15%;
+  background-image: url(./body-image.jpg);
+  background-repeat: no-repeat;
  
 }
 
@@ -19,12 +21,11 @@ textarea {
 
 .jumbotron {
   background-image: url(./coverphoto.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   text-align: right;
   margin-bottom: 0%;
   background-color: white;
-  
 }
 
 
@@ -85,9 +86,10 @@ textarea {
 }
 
  
-h1 {
+#title {
   color: #685033;
   font-family: 'Dancing Script', cursive;
+  padding-top: 10%;
 }
 
 #location  {
@@ -97,10 +99,20 @@ h1 {
 
 .jumbotron, #weather {
   padding-top: 1%;
- 
+   
 }
 
 #temp {
   font-size: 35px;
-  
+  color: #685033;
+}
+
+.lead {
+  font-family: 'Dancing Script', cursive;  
+  padding-bottom: 3%;
+}
+
+#currentDay {
+  font-size: 20px;
+ font-weight: bold;
 }
