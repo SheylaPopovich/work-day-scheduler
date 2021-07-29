@@ -1,4 +1,5 @@
- var timeSlots = [$("#8"), $("#9"), $("#10"), $("#11"), $("#12"), $("#13"), $("#14"), $("#15"), $("#16"), $("#17"), $("#18"), $("#19"), $("#20"), $("#21")]
+// create an array of times
+var timeSlots = [$("#8"), $("#9"), $("#10"), $("#11"), $("#12"), $("#13"), $("#14"), $("#15"), $("#16"), $("#17"), $("#18"), $("#19"), $("#20"), $("#21")]
 
 
 var todaysDate = $("#currentDay");
@@ -15,6 +16,7 @@ var todaysDate = $("#currentDay");
     }); 
          
 
+//insert API for current weather
     function weatherBalloon( cityID ) {
         var key = '2f1cda6e44000ccd9b7f1f34fc6c638c';
         fetch('https://api.openweathermap.org/data/2.5/weather?q=Denver,id=' + cityID+ '&appid=' + key)  
@@ -44,21 +46,15 @@ var todaysDate = $("#currentDay");
 var saveBtn = $(".saveBtn");
 var textArea = $(".text");
 
-
-
 saveBtn.click( function (){
   const userInput =  $(this).siblings(".text").val();
   const time = $(this).siblings(".hour").attr("id");
    console.log(time)
   localStorage.setItem(time, userInput);
-  
 })
 
 
-
-//get with tutor to have local storage output/save  values to text areas
-
-
+//Retrieve data from local storage for refresh feature
   $(".row").each(function(){
    const time = $(this).children(".hour").attr("id");
    const task = localStorage.getItem(time);
@@ -66,31 +62,21 @@ saveBtn.click( function (){
   })
   
 
-
-
-
 for (let index = 0; index < timeSlots.length; index++) {
   const selectedSlot = timeSlots[index].attr("id");
   const previousText = localStorage.getItem(selectedSlot);
-  // timeSlots[index].siblings(".text").value = selectedSlot
-  
-
-
-  console.log(previousText) 
   
 }
-
-
-
 
 
 var currentTime = moment().hours()
 // console.log(currentTime)
 
+
+//assign time to color coded time blocks
 for (let i = 0; i < timeSlots.length; i++) {
   const element = timeSlots[i].attr("id");
   
-
   if (element == currentTime){
     timeSlots[i].siblings().addClass("present")
   } 

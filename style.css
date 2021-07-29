@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1;
   margin-bottom: 5%;
   margin-left: 15%;
@@ -16,7 +16,6 @@ textarea {
   resize: none;
   color: #000000;
   border-left: 1px solid;
-  /* padding: 10px; */
 }
 
 .jumbotron {
@@ -30,13 +29,11 @@ textarea {
 
 .description {
   white-space: pre-wrap;
-  
 }
 
 .time-block {
   text-align: center;
   border-radius: 15px;
-  
 }
 
 .row {
@@ -46,28 +43,33 @@ textarea {
 }
 
 .hour {
-  background-color: #ffffff; 
+  background-color: #ffffff;
+  opacity: 0.5; 
   color: #685033;
   border-top: 1px solid #685033; 
   text-align: right;
+  font-weight: bolder;
   font-size: 25px;
-  padding-top: 4%;
+  padding-top: 3%;
   font-family: 'Oswald', sans-serif;
 }
 
 .past {
   background-color:#c7c7c7;
-  color: black;
+  color: #685033;
+  font-family: 'Roboto', sans-serif;
 }
 
 .present {
   background-color: #491795;
   color: black;
+  font-family: 'Roboto', sans-serif;
 }
 
 .future {
   background-color: #b89a66;
   color: black;
+  font-family: 'Roboto', sans-serif;
 }
 
 .saveBtn {
@@ -75,7 +77,7 @@ textarea {
   background-position:right;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  color: black;
+  color: #685033;
   font-size: 18px;
   font-weight: bolder;
 }
@@ -97,10 +99,8 @@ textarea {
     font-size: 20px;
 }
 
-
 .jumbotron, #weather {
-  padding-top: 1%;
-   
+  padding-top: 1%;   
 }
 
 #temp {
