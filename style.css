@@ -55,13 +55,13 @@ textarea {
 }
 
 .past {
-  background-color:#c7c7c7;
+  background-color:#fffaee;
   color: #685033;
   font-family: 'Roboto', sans-serif;
 }
 
 .present {
-  background-color: #491795;
+  background-color: #D1CFC0;
   color: black;
   font-family: 'Roboto', sans-serif;
 }
@@ -119,4 +119,3 @@ textarea {
   font-weight: bold;
   color: #685033;
   font-family: 'Oswald', sans-serif;
-}
