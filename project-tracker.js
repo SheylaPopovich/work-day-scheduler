@@ -69,7 +69,7 @@ for (let index = 0; index < timeSlots.length; index++) {
 }
 
 
-var currentTime = (12)
+var currentTime = moment().hours()
 // console.log(currentTime)
 
 
